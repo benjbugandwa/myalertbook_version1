@@ -1,0 +1,64 @@
+CREATE TABLE Alerte
+(
+    idalerte INT PRIMARY KEY NOT NULL,
+    codealerte VARCHAR(100) UNIQUE,
+    dateevenement DATETIME,
+    daterapportage DATETIME,
+    lanceuralerte VARCHAR(100),
+    typeevement VARCHAR(255),
+    descriptionfaits TEXT,
+  
+    evenementsimilaire tinyint,
+    impact_alerte VARCHAR(255) NULL
+    recommandations
+    dateevenementsimilaire DATETIME NULL,
+    occupantzone VARCHAR(255) NULL,
+    positinfrdcproche VARCHAR(255) NULL,
+    sourceinfo VARCHAR(5),
+    detailsourceinfo VARCHAR(5) NULL,
+    
+    telephoneverification VARCHAR(10) NULL,
+    
+     pcodeprovince VARCHAR(255),
+     pcodeterritoire VARCHAR(255),
+     pcodechefferie VARCHAR(255) NULL,
+     pcodegroupement VARCHAR(255) NULL,
+     pcodezonesante VARCHAR(255),
+     pcodeairesante VARCHAR(255) NULL,
+     village VARCHAR(255) NULL,
+     axealerte VARCHAR(255) NULL,
+    
+     hasmouvementpopulation tinyint,
+     village_provenance VARCHAR(255) NULL,
+     village_accueil VARCHAR(255) NULL,
+    
+    nbre_menages int,
+    nbre_personnes INt,
+    nbre_hommes int,
+    nbre_femmes int,
+    nbre_filles int,
+    nbre_garcons int,
+    
+     is_frdc_auteur tinyint,
+    
+     is_pnc_auteur tinyint,
+     is_milice_auteur tinyint,
+     is_population_auteur tinyint,
+     autre_auteur VARCHAR(255) NULL,
+    
+     is_resident_victime tinyint,
+     is_retourne_victime tinyint,
+     is_refugie_victime tinyint,
+     is_rapatrie_victime tinyint,
+     autre_victime VARCHAR(255) NULL,
+    
+     is_alerte_validee tinyint NULL,
+     datevalidation DATETIME,
+     validatedby VARCHAR(255) NULL,
+    
+    infocomplementaire text,
+    type_infocomplementaire VARCHAR(255) NULL,
+    
+    
+    
+)

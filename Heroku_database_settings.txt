@@ -1,0 +1,13 @@
+mysql://bdb618a206eb0e:eecc22ba@us-cdbr-east-06.cleardb.net/heroku_6c3fffb0324e409?reconnect=true
+
+user name :bdb618a206eb0e
+
+password: eecc22ba
+
+host: us-cdbr-east-06.cleardb.net
+
+database name: heroku_6c3fffb0324e409
+
+https://alertbook-cluster-f125f34fd3be.herokuapp.com/
+
+https://github.com/benjbugandwa/myalertbook.git
